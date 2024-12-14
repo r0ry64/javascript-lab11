@@ -67,3 +67,11 @@ console.log("Total inventory value (before discount): $" + store.getInventoryVal
 ProductProperties.applyDiscount(store.inventory, 0.15);
 
 console.log("Total inventory value (after discount): $" + store.getInventoryValue().toFixed(2));
+
+const productName = "Milk";
+const foundProduct = store.findProductByName(productName);
+if (foundProduct) {
+    console.log(`Found product: ${foundProduct.toString()}`);
+} else {
+    console.log(`Product with name '${productName}' was not found!!`);
+}
