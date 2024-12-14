@@ -62,11 +62,11 @@ store.addProduct(hotDog);
 store.addProduct(milk);
 store.addProduct(avocado);
 
-console.log("Total inventory value (before discount): $" + store.getInventoryValue().toFixed(2));
+console.log("Total inventory value before discount: $" + store.getInventoryValue().toFixed(2));
 
 ProductProperties.applyDiscount(store.inventory, 0.15);
 
-console.log("Total inventory value (after discount): $" + store.getInventoryValue().toFixed(2));
+console.log("Total inventory value after discount: $" + store.getInventoryValue().toFixed(2));
 
 const productName = "Milk";
 const foundProduct = store.findProductByName(productName);
