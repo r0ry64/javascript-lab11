@@ -61,3 +61,5 @@ store.addProduct(chickenNug);
 store.addProduct(hotDog);
 store.addProduct(milk);
 store.addProduct(avocado);
+
+console.log("Total inventory value (before discount): $" + store.getInventoryValue().toFixed(2));
