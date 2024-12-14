@@ -54,3 +54,10 @@ const chickenNug = new ProductProperties("Chicken Nuggets", 0.5, 30);
 const hotDog = new ProductProperties("Hot Dog", 1.0, 100);
 const milk = new PerishableProductProperties("Milk", 1.5, 10, "2024-12-31");
 const avocado = new PerishableProductProperties("Avocado", 4.0, 5, "2024-12-15");
+
+const store = new Store();
+store.addProduct(hwnPizza);
+store.addProduct(chickenNug);
+store.addProduct(hotDog);
+store.addProduct(milk);
+store.addProduct(avocado);
