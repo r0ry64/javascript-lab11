@@ -71,11 +71,11 @@ store.addProduct(avocado);
 
 store.printInventory();
 
-console.log("Total inventory value before discount: $" + store.getInventoryValue().toFixed(2));
+console.log("Total inventory value before 15% discount: $" + store.getInventoryValue().toFixed(2));
 
 ProductProperties.applyDiscount(store.inventory, 0.15);
 
-console.log("Total inventory value after discount: $" + store.getInventoryValue().toFixed(2));
+console.log("Total inventory value after 15% discount: $" + store.getInventoryValue().toFixed(2));
 
 const productName = "Milk";
 const foundProduct = store.findProductByName(productName);
