@@ -63,3 +63,5 @@ store.addProduct(milk);
 store.addProduct(avocado);
 
 console.log("Total inventory value (before discount): $" + store.getInventoryValue().toFixed(2));
+
+ProductProperties.applyDiscount(store.inventory, 0.15);
