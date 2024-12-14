@@ -47,6 +47,13 @@ class Store {
     findProductByName(name) {
         return this.inventory.find(product => product.name === name) || null;
     }
+
+    printInventory() {
+        console.log("Inventory:");
+        this.inventory.forEach(product => {
+            console.log(product.toString());
+        });
+    }
 }
 
 const hwnPizza = new ProductProperties("Hawaiian Pizza", 10.0, 2);
